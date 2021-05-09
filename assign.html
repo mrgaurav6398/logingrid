@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 35em 35em;
+            background-color: #ffffff;
+            padding: 0px;
+            /* justify-content: space-between; */
+        }
+        
+        .loginImage {
+            background-image: url("./loginimmg.jpeg");
+        }
+        /*  .grid-container {
+            display: grid;
+            grid-template-columns: 35em 35em;
+            background-color: #ffffff;
+            padding: 0px;
+            
+            position: absolute;
+            left: 10em;
+            top: 10em;
+        } */
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 100px;
+            font-size: 30px;
+            text-align: center;
+            height: inherit;
+        }
+        
+        input[type=submit] {
+            background: orange;
+            border: palevioletred;
+            color: papayawhip;
+            height: 30px;
+            width: 70px;
+            /* border-radius: 2em; */
+            width: 200px;
+        }
+        
+        input[type=text]:focus {
+            height: 10px;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="grid-container"> -->
+
+
+    <div class="grid-item">
+
+
+        <form>
+            <label for="fname"><b>Username</b></label><br>
+            <input type="text" id="fname" placeholder="Enter Username" name="fname"><br><br>
+            <label for="lname">Password</label><br>
+            <input type="text" id="lname" placeholder="Enter password" name="lname"><br><br>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+
+    <div class="grid-item loginImage">
+        <!-- <img src="./loginimmg.jpeg" alt="404" id="loginImage"> -->
+    </div>
+
+
+
+    <!-- </div> -->
+</body>
+
+</html>
